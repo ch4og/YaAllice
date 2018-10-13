@@ -4,4 +4,4 @@
 
 Special for Уроки Настоящего
 
-Developers: Defi1X, 4u3_dev, MagicWinnie.
+Developers: Defi1X, 4u3, MagicWinnie.
