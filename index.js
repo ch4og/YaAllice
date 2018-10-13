@@ -24,7 +24,7 @@ app.post('/', function (req, res) {
     res.json({
       session: req.body.session,
       response: {
-        text: req.body.request.command || 'Hello!',
+        text: req.body.request.command || 'Привет!',
         end_session: false,
       },
     });
@@ -35,7 +35,7 @@ app.post('/', function (req, res) {
     res.json({
       version: req.body.version,
       response: {
-        text: req.body.request.command || 'Hello!',
+        text: req.body.request.command || 'Привет!',
         end_session: false,
       },
     });
@@ -47,7 +47,7 @@ app.post('/', function (req, res) {
       version: req.body.version,
       session: req.body.session,
       response: {
-        text: req.body.request.command || 'Hello!',
+        text: req.body.request.command || 'Привет!',
         end_session: true,
       },
     });
@@ -59,7 +59,7 @@ app.post('/', function (req, res) {
       version: req.body.version,
       session: req.body.session,
         response: {
-          text: req.body.request.command || 'Hello!',
+          text: req.body.request.command || 'Привет!',
           
           end_session: false,
         },
