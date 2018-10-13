@@ -3,3 +3,5 @@
 создания навыков для Яндекс.Алисы();
 
 Special for Уроки Настоящего
+
+Developers: Defi1X, 4u3_dev, MagicWinnie.
