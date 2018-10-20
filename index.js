@@ -1,6 +1,6 @@
 ///const { sample } = require('lodash')
 
-const { Alice } = require('yandex-dialogs-sdk')
+const { Alice, Reply, Markup } = require('yandex-dialogs-sdk')
 const alice = new Alice()
 
 alice.command('', ctx => {
