@@ -1,4 +1,4 @@
-//const { sample } = require('lodash')
+///const { sample } = require('lodash')
 const Alice = require('yandex-dialogs-sdk')
 const alice = new Alice()
 
