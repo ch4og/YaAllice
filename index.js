@@ -3,7 +3,7 @@ const Alice = require('yandex-dialogs-sdk')
 const alice = new Alice()
 
 alice.any(ctx => {
-  ctx.reply('Привет')
+  ctx.reply('Приветиk')
 })
 
 alice.listen("/",3000)
