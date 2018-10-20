@@ -1,6 +1,8 @@
 const Alice  = require('yandex-dialogs-sdk')
 const alice = new Alice()
 
+const users = [];
+
 alice.command('Что происходит', ctx => {
 	if(users.includes(ctx.userId)){
 		return ctx.reply('О, я тебя помню!')
