@@ -4,4 +4,9 @@
 
 Special for Уроки Настоящего
 
-Developers: Defi1X, 4u3, MagicWinnie.
+Developers : {
+             f0lder : Основной кодинг,
+             4u3 : Организация всей экосистемы серверов,
+             MagicWinnie : математика + js,
+             PolinaPyatkova2004 : Математика
+             }
