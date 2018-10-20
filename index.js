@@ -1,6 +1,6 @@
 const Alice  = require('yandex-dialogs-sdk')
 const alice = new Alice()
-
+//AAA
 const users = [];
 
 alice.command('Что происходит', ctx => {
