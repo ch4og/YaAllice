@@ -7,6 +7,6 @@ Special for Уроки Настоящего
 Developers : {
              f0lder : Основной кодинг,
              4u3 : Организация всей экосистемы серверов,
-             MagicWinnie : математика + js,
+             MagicWinnie : Математика + js,
              PolinaPyatkova2004 : Математика
              }
