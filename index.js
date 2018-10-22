@@ -1,14 +1,14 @@
-﻿const Alice  = require('yandex-dialogs-sdk')
+﻿﻿const Alice  = require('yandex-dialogs-sdk')
 const alice = new Alice()
 
 var waArg = 0;
 var fun = 0;
 var MaxArgs = 0
-var argFor1 = new List([]);
-var argFor2 = new List([]);
-var argFor3 = new List([]);
-var argFor4 = new List([]);
-var argFor5 = new List([]);
+var argFor1 = [];
+var argFor2 = [];
+var argFor3 = [];
+var argFor4 = [];
+var argFor5 = [];
 
 alice.command('', ctx => {
 	ctx.session.set('current',0)
@@ -19,39 +19,31 @@ alice.command('', ctx => {
 alice.command(/помощь/i, ctx => {
 
 	ctx.session.set('current',0)
-	ctx.reply('Я умею считать площадь треугольника. Чтобы больше узнать о том, как мной подльзоваться, скажи любую фразу со словом "Формулы"')
+	ctx.reply('Я умею считать площадь треугольника, чтобы воспользоваться мной скажи "Формулы"')
 })
 
 alice.command(['Формулы','формулы'], ctx => {
 	ctx.reply(
 		ctx.replyBuilder
-			.text('Нажми на кнопку, чтобы узнать о том, как использовать определенную формулу')
-			.addButton(
-				ctx.buttonBuilder
-					.text('1я')
-        return ctx.reply(act('1')))
+			.text('ОК. Назови любую фомулу. (по двум сторонам и углу между ними, по стороне и высоте, по трем сторонам, по сторонам и радиусу вписанной окружности, по сторонам и радиусу описанной окружности')
 			
-			.addButton(
-				ctx.buttonBuilder
-					.text('2я')
-        return ctx.reply(act('2')))
-			
-			.addButton(
-				ctx.buttonBuilder
-					.text('3я')
-        return ctx.reply(act('3')))
-			
-			.addButton(
-				ctx.buttonBuilder
-					.text('4я')
-        return ctx.reply(act('4')))
-			
-			.addButton(
-				ctx.buttonBuilder
-					.text('5я')
-        return ctx.reply(act('5')))
 			
 	)
+})
+alice.command('по двум сторонам и углу между ними', ctx => {
+	 return ctx.reply(act(1))
+})
+alice.command('по стороне и высоте', ctx => {
+	 return ctx.reply(act(2))
+})
+alice.command('по трем сторонам', ctx => {
+	 return ctx.reply(act(3))
+})
+alice.command('по сторонам и радиусу вписанной окружности', ctx => {
+	 return ctx.reply(act(4))
+})
+alice.command('по сторонам и радиусу описанной окружности', ctx => {
+	 return ctx.reply(act(5))
 })
 alice.any(ctx => {
   if (fun != 0 && waArg <= MaxArgs){
@@ -77,7 +69,7 @@ alice.any(ctx => {
   else if (fun != 0 && waArg > MaxArgs) {
     count(fun)
   }
-  else(){
+  else{
     ctx.reply("Чтобы узнать немного больше, спроси у меня 'Помощь'")
   }
 
@@ -145,7 +137,7 @@ function nxt(fun, wait){
   }
   if (fun == 5){
     MaxArgs = 4;
-    f (wait == 1){
+    if(wait == 1){
       return("Введите сторону A")
     }
     if (wait == 2){
